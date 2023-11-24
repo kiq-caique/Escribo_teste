@@ -13,6 +13,6 @@ Exemplos:
 # Instruções:
 
 1 - Copie o código e abra o teminal no diretório onde se encontra o arquivo.
-2 - Digite no terminal: node <nome do arquivo>.js  
+2 - Digite no terminal: node (nome do arquivo).js  
 3 - Digite o numero que desejar.
 
