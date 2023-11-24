@@ -16,3 +16,4 @@ Exemplos:
 2 - Digite no terminal: node (nome do arquivo).js  
 3 - Digite o numero que desejar.
 
+![image](https://github.com/kiq-caique/Escribo_teste/assets/96061515/1cff7d84-a45d-4c4e-b471-5f49a0d3cd0f)
