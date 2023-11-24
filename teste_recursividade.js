@@ -1,4 +1,9 @@
-// Desafio Técnico 1 Vaga Dev Escribo
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
 
 function somatorioDivisiveis3e5Recursivo(numero, i = 0, somatorio = 0) {
     if (i < numero) {
@@ -11,7 +16,14 @@ function somatorioDivisiveis3e5Recursivo(numero, i = 0, somatorio = 0) {
     }
 }
 
-// Exemplo de uso:
-let numeroInformado = 10;  // Você pode substituir este valor pelo número desejado
-let resultado = somatorioDivisiveis3e5Recursivo(numeroInformado);
-console.log(`O somatório dos valores divisíveis por 3 ou 5 abaixo de ${numeroInformado} é: ${resultado}`);
+
+rl.question('Digite um número: ', (numeroInformado) => {
+    numeroInformado = parseInt(numeroInformado);
+    if (isNaN(numeroInformado)) {
+        console.log("Por favor, digite um número válido.");
+    } else {
+        let resultado = somatorioDivisiveis3e5Recursivo(numeroInformado);
+        console.log(`O somatório dos valores divisíveis por 3 ou 5 abaixo de ${numeroInformado} é: ${resultado}`);
+    }
+    rl.close();
+});
